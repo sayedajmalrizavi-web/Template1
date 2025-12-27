@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Computing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body 
+        {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .hero 
+        {
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            height: 600px;
+        }
+        .hero h16
+        {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .section 
+        {
+            padding: 60px 0;
+        }
+        .product-card 
+        {
+            margin-bottom: 30px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover 
+        {
+            transform: scale(1.05);
+        }
+        .product-card img 
+        {
+            height: 350px;
+            background-size: cover;
+        }
+        footer
+        {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) 
+        {
+            .hero h1 
+            {
+                font-size: 2rem;
+            }
+            .section 
+            {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <img src="images\logo.jpeg" height="50px" alt="Logo" />
+            <a class="navbar-brand" href="#home">Fusion Computing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#premium">Premium Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript">
+        $('.js-scroll-trigger').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 style="margin-top: 100px;">Welcome to My Fusion Store</h1>
+            <p class="lead ">Quality you can count on. Tech you can trust<br>Discover the laptop that fits your life.</p>
+            <a href="#product" class="btn btn-primary btn-lg ">Explore Our Laptops</a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>About Us</h2>
+                    <p>Welcome to our laptop hub your trusted destination for the latest laptops,honest insights and smart buying guidance.We created this platform to simplify the laptop-buying experience by providing clear information, helpful comparison, and expert recommendations.<br>Explore our collection, stay updated  with tech trends, and let us guide you to your perfect laptop.We believe in continuous learning and technological growth. By combining creativity with technical expertise, Fusion Computing strives to create scalable, secure, and future-ready digital solutions that meet today’s computing demands.<br>Our mission is to empower learners and innovators through technology, collaboration, and hands-on experience.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images\about.jpg" alt="Laptop Shop" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section -->
+    <section id="product" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Products</h2>
+            <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images\laptop 1.jpg" class="card-img-top" alt="Laptop 1">
+                <div class="card-body">
+                    <h5 class="card-title">Acer Nitro 5</h5>
+                    <p class="card-text">Powerful gaming laptop with high performance and RGB lighting.</p>            
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images\laptop 2.webp" class="card-img-top" alt="Laptop 2">
+                <div class="card-body">
+                    <h5 class="card-title">Lenovo IdeaPad Slim</h5>
+                    <p class="card-text">Lightweight and stylish laptop ideal for students and professionals.</p>    
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="images\laptop 3.webp" class="card-img-top" alt="Laptop 3">
+                <div class="card-body">
+                    <h5 class="card-title">HP Pavilion</h5>
+                    <p class="card-text">Reliable performance with sleek design and long battery life.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </section>
+    <!-- Premium Product Section -->
+    <section id="premium" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Premium Products</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-6">
+                    <div class="card product-card">
+                        <img src="images\laptop 4.jpg" class="card-img-top" alt="Laptop 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Dell Inspiron 15</h5>
+                            <p class="card-text">A reliable laptop with fast performance, perfect for work and daily use.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                    <div class="card product-card">
+                        <img src="images\laptop 5.jpg" class="card-img-top" alt="Laptop 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Asus VivoBook 14</h5>
+                            <p class="card-text">Slim, stylish, and lightweight laptop with excellent battery backup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Get in Touch</h4>
+                    <p>Email: info@fusioncomputing.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Urban Lane, Tech Town, USA</p>
+                </div>
+                <div class="col-md-6">
+                    <form autocomplete="off">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Fusion Computing .Designed By Sayed Ajmal Rizavi.</p>
+        </div>
+    </footer>
+</body>
+</html>
